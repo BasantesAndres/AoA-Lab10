@@ -4,7 +4,6 @@
   <img src="https://img.shields.io/badge/Language-C++-blue.svg" />
   <img src="https://img.shields.io/badge/Language-Python-yellow.svg" />
   <img src="https://img.shields.io/badge/Topic-Dynamic%20Programming-green.svg" />
-  <img src="https://img.shields.io/badge/Status-Completed-success.svg" />
 </p>
 
 ---

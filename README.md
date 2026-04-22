@@ -1,30 +1,38 @@
 # 🧠 Analysis of Algorithms - Lab 10
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-C++-blue.svg" />
+  <img src="https://img.shields.io/badge/Language-Python-yellow.svg" />
+  <img src="https://img.shields.io/badge/Topic-Dynamic%20Programming-green.svg" />
+  <img src="https://img.shields.io/badge/Status-Completed-success.svg" />
+</p>
+
+---
+
 ## 📌 Overview
-This lab focuses on fundamental algorithmic techniques including **recursion** and **dynamic programming (DP)**. The main goal is to understand performance differences and optimization strategies through classic problems.
+
+This lab explores fundamental algorithmic paradigms:
+
+- 🔁 Recursion
+- ⚡ Dynamic Programming (Memoization)
+- 🎒 Optimization Problems (0-1 Knapsack)
 
 ---
 
-## 🚀 Implemented Problems
+## 🚀 Implemented Algorithms
 
-### 1️⃣ Fibonacci using Recursion
-- Implements the mathematical definition of Fibonacci.
-- Demonstrates inefficiency due to repeated calculations.
-
-#### Recursive Formula
-F(n) = F(n-1) + F(n-2)
-
+### 🔁 Fibonacci (Recursive)
+- Formula: F(n) = F(n-1) + F(n-2)
 - Time Complexity: O(2^n)
-- Simple but inefficient
+- Inefficient due to repeated calculations
 
 ---
 
-### 2️⃣ Fibonacci using Dynamic Programming (Memoization)
-- Optimized version using memoization
-- Avoids recomputation
+### ⚡ Fibonacci (Dynamic Programming)
+- Uses memoization to optimize
+- Fixed bug: passing memo in recursive calls
 
-#### Fix Applied
-Original bug:
+Buggy:
 result = fib(n-1) + fib(n-2)
 
 Fixed:
@@ -34,14 +42,13 @@ result = fib(n-1, memo) + fib(n-2, memo)
 
 ---
 
-### 3️⃣ 0-1 Knapsack Problem
+### 🎒 0-1 Knapsack
+- Maximizes value under capacity constraint
 
-- Maximize value under capacity constraint
-
-DP formula:
+DP relation:
 dp[i][w] = max(dp[i-1][w], value[i-1] + dp[i-1][w-weight[i-1]])
 
-- Time Complexity: O(n × capacity)
+- Time Complexity: O(n × W)
 
 ---
 
@@ -59,7 +66,7 @@ Lab10/
 
 ## 🛠 How to Run
 
-Compile C++:
+Compile:
 g++ Fibonacci_recursion.cpp -o fib
 ./fib
 
@@ -72,16 +79,13 @@ python Debug.py
 ---
 
 ## 📸 Screenshots
-Included:
-- Fibonacci recursion
-- Fibonacci DP
-- Knapsack
+Included in repository.
 
 ---
 
 ## 🧠 Key Learnings
-- Recursion is inefficient for large inputs
-- Dynamic Programming improves performance
+- Recursion is inefficient
+- DP improves performance
 - Knapsack shows optimal substructure
 
 ---
@@ -93,4 +97,4 @@ Professor: Israel Pineda
 ---
 
 ## ⭐ Conclusion
-This lab demonstrates how algorithm optimization using dynamic programming significantly improves performance compared to naive recursion.
+Dynamic programming significantly improves performance over naive recursion.

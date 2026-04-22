@@ -95,5 +95,3 @@ Professor: Israel Pineda
 
 ---
 
-## ⭐ Conclusion
-Dynamic programming significantly improves performance over naive recursion.
